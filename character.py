@@ -41,13 +41,11 @@ class Character:
 
         else:
             print('\nAttacks: ')
-            c = 1
-            for attk in self.attks:
-                print(f'{c}. ', end='')
+            for i, attk in enumerate(self.attks, 1):
+                print(f'{i}. ', end='')
                 for key, value in attk.items():
                     print(f'{key:4} = {value:<10}', end='')
                 print()
-                c += 1
             while True:
                 try:
                     attk_index = int(input('\nChoose an attack: ')) - 1
