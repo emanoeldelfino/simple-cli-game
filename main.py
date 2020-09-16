@@ -20,9 +20,9 @@ if __name__ == '__main__':
                      {'name': 'flying kick', 'cost': 0, 'dmg': 20},
                      {'name': 'storm', 'cost': 0, 'dmg': 50}]
 
-    player = Character(name='Artemis', hp=1000, mp=100, attks=player_attacks)
+    player = Character(name='Artemis', hp=1000, mp=100, attks=player_attacks, luck=55)
 
-    enemy = Character(name='Alur', hp=400, mp=0, attks=enemy_attacks)
+    enemy = Character(name='Alur', hp=400, mp=0, attks=enemy_attacks, luck=45)
 
     print('\n' * 70)
 

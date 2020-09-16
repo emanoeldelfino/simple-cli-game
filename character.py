@@ -2,11 +2,18 @@ import random
 
 
 class Character:
-    def __init__(self, name: str, hp: int, mp: int, attks: list) -> None:
+    def __init__(self, name: str, hp: int, mp: int, attks: list, luck: int = 50) -> None:
         self.name = name
         self.hp = self.max_hp = hp
         self.mp = self.max_mp = mp
         self.attks = attks
+
+        if luck < 1:
+            luck = 1
+        elif luck > 100:
+            luck = 100
+
+        self.luck = luck
 
     def show_bar(self, base: str, color: str, ticks: int = 50) -> None:
         value = getattr(self, base)
@@ -25,6 +32,13 @@ class Character:
             return False
         else:
             return True
+
+    def success(self):
+        num = random.randint(0, 100)
+        if num in range(self.luck):
+            return True
+        else:
+            return False
 
     def choice_attk(self, auto: bool) -> list:
         if auto:
@@ -63,5 +77,9 @@ class Character:
                     print(err)
                 else:
                     break
+
+        hit = self.success()
+        if not hit:
+            dmg = 0
 
         return [attk['name'], dmg]
