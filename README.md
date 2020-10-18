@@ -13,3 +13,6 @@ Play and have fun!
 ## Notes
 - You can edit the code as wanted, maybe making the game harder or easier.
 - I tried to make the code as clear as possible, though it can always be better.
+
+
+Inspired by [The Complete Python 3 Course: Beginner to Advanced!](https://www.udemy.com/course/python-complete/) course from Udemy.
