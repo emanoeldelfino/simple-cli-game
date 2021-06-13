@@ -1,8 +1,8 @@
 # simple-cli-rpg-game
-![Screenshot of the game](https://github.com/emanoeldelfino/simple-cli-rpg-game/blob/master/screenshot.png)
+![Screenshot of the game](https://github.com/emanoeldelfino/simple-cli-rpg-game/blob/main/screenshot.png)
 
 # Playing
-![Playing gif](https://github.com/emanoeldelfino/simple-cli-rpg-game/blob/master/playing.gif)
+![Playing gif](https://github.com/emanoeldelfino/simple-cli-rpg-game/blob/main/playing.gif)
 
 ## Steps to run
 - Install latest version of [Python 3](https://www.python.org/downloads/)
